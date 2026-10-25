@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Header() {
   return (
     <header>
@@ -7,9 +9,9 @@ export default function Header() {
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-2">
                 <div className="logo">
-                  <a href="index.html">
+                  <Link to="/">
                     <img src="img/logo.png" alt="" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-7">
@@ -17,42 +19,42 @@ export default function Header() {
                   <nav>
                     <ul id="navigation">
                       <li>
-                        <a href="index.html">home</a>
+                        <Link to="/">home</Link>
                       </li>
                       <li>
-                        <a href="about.html">about</a>
+                        <Link to="/about">about</Link>
                       </li>
                       <li>
-                        <a href="Recipes.html">Recipes</a>
+                        <Link to="/recipes">Recipes</Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link to="/blog">
                           blog <i className="ti-angle-down"></i>
-                        </a>
+                        </Link>
                         <ul className="submenu">
                           <li>
-                            <a href="blog.html">blog</a>
+                            <Link to="/blog">blog</Link>
                           </li>
                           <li>
-                            <a href="single-blog.html">single-blog</a>
+                            <Link to="/single-blog">single-blog</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link to="/pages">
                           pages <i className="ti-angle-down"></i>
-                        </a>
+                        </Link>
                         <ul className="submenu">
                           <li>
-                            <a href="recipes_details.html">Recipes Details</a>
+                            <Link to="/recipes-details">Recipes Details</Link>
                           </li>
                           <li>
-                            <a href="elements.html">elements</a>
+                            <Link to="/elements">elements</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </nav>
@@ -60,9 +62,9 @@ export default function Header() {
               </div>
               <div className="col-xl-3 col-lg-3 d-none d-lg-block">
                 <div className="search_icon">
-                  <a href="#">
+                  <Link to="#">
                     <i className="ti-search"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-12">
